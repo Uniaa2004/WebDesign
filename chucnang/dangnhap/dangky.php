@@ -39,6 +39,34 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
+<head>
+<script>
+        function validateForm() {
+            var fullname = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirm_password = document.getElementById('password').value;
+
+            if (username == "" ) {
+                alert('Please fill out username fields!');
+                return false;
+            }
+
+            if (email == "") {
+                alert('Please fill out email fields!');
+                return false;
+            }
+
+            if (password == "") {
+                alert('Please fill out password fields!');
+                return false;
+            }
+
+            return true; 
+        }
+    </script>
+
+</head>   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <section class="vh-100 bg-image" style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
     <div class="mask d-flex align-items-center h-100 gradient-custom-3">
